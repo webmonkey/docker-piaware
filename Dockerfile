@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 RUN apt-get update
-RUN apt-get install -y build-essential debhelper tcl8.6-dev autoconf python3-dev python3-venv dh-systemd libz-dev wget git
+RUN apt-get install -y build-essential debhelper tcl8.6-dev autoconf python3-dev python3-venv dh-systemd libz-dev wget git libboost-all-dev
 WORKDIR /tmp
 RUN git clone https://github.com/flightaware/piaware_builder.git
 WORKDIR piaware_builder
